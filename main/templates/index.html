@@ -5,6 +5,7 @@
     <head>
         <title>SKP QUIZ</title>
         <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+        <link rel="stylesheet" href="{% static 'css/popup.css'%}">
         <script src="{% static 'js/jquery.js' %}"></script>
         <script src="{% static 'js/bootstrap.js' %}"></script>
         <script src="{% static 'js/popper.js' %}"></script>
@@ -20,6 +21,19 @@
         </script>
         </head>
         <body>
+        <button id="myBtn" class="btn btn-success" onclick="popup()">Create PDF</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form action="{% url 'create' %}" method="POST">
+                    {% csrf_token %}
+                    <input type="number" placeholder="Starting Index" name="start">
+                    <input type="number" placeholder="End Index" name = "end">
+                    <input type="submit" class="btn btn-success" value="Create">
+                </form>
+            </div>
+        </div>
+        <script src="{% static 'js/popup.js' %}"></script>
         <div class="container">
             <h1 class="text-danger mt-3">Simple Quiz App</h1>
             <hr>
@@ -27,7 +41,7 @@
                 {% for i in  exam %}
                 <table>
                     <tr>
-                        <td class="text-primary">{{i.id}} ) {{i.Question}} ?</td>
+                        <td class="text-primary">{{forloop.counter}} ) {{i.Question}} ?</td>
                     </tr>
                     <tr>
                         <td><input type = "radio" class="rb" name = {{i.id}} id="Option1" value="{{i.opt1}}">{{i.opt1}}</td>

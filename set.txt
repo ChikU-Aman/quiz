@@ -1,0 +1,30 @@
+1) Find out the false statement about intensity of x ray beam
+A.	Tube voltage influence in both quality and intensity
+B.	As the applied tube voltage increase the effective photon energy increase
+C.	Intensity of the beam is not depending on tube potential
+D.	Maximum photon energy is proportional to the peak value of tube potential
+C.	Intensity of the beam is not depending on tube potential
+2) Which of the following statement is false x ray tube rating
+A.	It is of two types electrical and thermal rating
+B.	Electrical rating is related to maximum combination of kVp, mA and seconds
+C.	Thermal rating will indicate the number of exposure that may be given in a period of time
+D.	All of the above
+D.	All of the above
+3) The efficiency of tungsten target is about %?
+A.100
+B. more than 25
+C. less than 1
+D. 99
+C. less than 1
+4) A unit of absorbed dose measurement express the
+A.	Radioactivity
+B.	Binding energy
+C.	Ionization of air
+D.	Energy deposited per kg of absorber
+D.	Energy deposited per kg of absorber
+5) Rad is equal to
+A.	50Gy
+B.	0.5Gy
+C.	1Gy
+D.	5,000Gy
+B.	0.5Gy
